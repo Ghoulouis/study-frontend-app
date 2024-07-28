@@ -14,5 +14,13 @@ export default function RouterUrl() {
             path: "/dashboard",
             element: <Layout children={<Dashboard />} />,
         },
+        {
+            path: "/bridge",
+            element: <Layout children={<Dashboard />} />,
+        },
+        {
+            path: "/bridge-admin",
+            element: <Layout children={<Dashboard />} />,
+        },
     ]);
 }

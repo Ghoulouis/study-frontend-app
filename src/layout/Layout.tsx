@@ -11,19 +11,22 @@ export default function Layout({ children }: { children: ReactNode }) {
     return (
         <Box
             sx={{
+                minHeight: 1,
                 display: "flex",
+                flexDirection: { xs: "row", lg: "row" },
             }}
         >
-
             <Sidebar />
 
             <Box
                 component="main"
                 sx={{
                     flexGrow: 1,
-                    marginLeft: sidebarWidth,
-                    padding: 2, // Add padding for main content
-                    transition: "margin-left 0.3s ease", // Smooth transition
+                    minHeight: 1,
+                    display: "flex",
+                    flexDirection: "column",
+                    px: 2,
+                    width: `calc(100% )`,
                 }}
             >
                 {children}
